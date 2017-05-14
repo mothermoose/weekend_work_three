@@ -26,6 +26,53 @@ class HotelReservation
 end
 
 
+puts "TESTING the HotelReservation class..."
+puts
+
+hotelreservation = HotelReservation.new(customer_name: Melanie Ilseman, date: 05-08-1989, room_number: 230, amenities: [fridge, crib, shower cap]) 
+
+result = hotelreservation.customer_name
+
+puts "customer_name returned:"
+puts result
+puts
+
+if result == "Melanie Ilseman"
+  puts "PASS!"
+else
+  puts "F"
+end
+puts
+
+result = hotelreservation.date
+
+puts "date returned:"
+puts result
+puts
+
+if result == 05-08-1989
+  puts "PASS!"
+else
+  puts "F"
+end
+puts
+
+result = hotelreservation.amenities
+
+puts "amenities returned:"
+puts result
+puts
+
+if result == [fridge, crib, shower cap]
+  puts "PASS!"
+else
+  puts "F"
+end
+
+
+
+
+
 # Write your own driver code below! Make sure your code tests the following:
 # The ability to change a room number even after a reservation has already been created
 # The add_a_fridge method

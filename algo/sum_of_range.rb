@@ -3,6 +3,22 @@
 # numbers, inclusive.
 
 def sum_of_range(array)
+one = sum_of_range[0]
+two = sum_of_range[1]
+counter = 1
+sum_of_one = 0
+sum_of_two = 0
+
+one.times do 
+  sum_of_one = one - counter + one 
+end 
+
+two.times do
+  sum_of_two = two - counter + two
+end  
+
+result = sum_of_one + sum_of_two
+
 
 end
 
